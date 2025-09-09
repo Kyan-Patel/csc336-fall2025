@@ -67,7 +67,8 @@ nav a:hover {
 
 /* Card hover effect */
 .card:hover {
-  background-color: #f0f0f0;
+   background: linear-gradient(135deg, #1d428a, #ffc72c);
+  color: white;
   transform: scale(1.1);
 }
 
