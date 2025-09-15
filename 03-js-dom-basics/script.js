@@ -24,5 +24,5 @@ function plantFlower(){
 }
 
 function changeWeather(){
-    pass;
+    
 }
