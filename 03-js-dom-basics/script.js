@@ -23,6 +23,25 @@ function plantFlower(){
     garden.appendChild(flower);
 }
 
-function changeWeather(){
-    
+function changeWeather() {
+  const weatherOptions = [
+    {icon:'☀️ Sunny', bg:'linear-gradient(to bottom, rgba(255,255,0,0.4), rgba(255,165,0,0.4))'},
+    {icon:'🌧️ Rainy', bg:'rgba(0,0,50,0.4)'},
+    {icon:'❄️ Snowy', bg:'rgba(200,200,255,0.5)'},
+    {icon:'🌪️ Windy', bg:'rgba(100,100,100,0.5)'},
+  ];
+
+  const random = weatherOptions[Math.floor(Math.random()*weatherOptions.length)];
+
+  const weatherDisplay = document.getElementById('weather-display');
+  weatherDisplay.textContent = random.icon;
+
+
+  const overlay = document.getElementById('weather-overlay');
+  overlay.style.background = random.bg;
+
+  weatherDisplay.classList.add('pop');
+  setTimeout(() => weatherDisplay.classList.remove('pop'), 300);
 }
+
+
