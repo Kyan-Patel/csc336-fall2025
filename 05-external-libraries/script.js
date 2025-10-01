@@ -6,7 +6,7 @@ window.onload = function () {
     Toastify({
         text: "Welcome! Hope you enjoy your 🌯",
         duration: 5000,
-        gravity: "bottom",
+        gravity: "top",
         position: "right",
         close: true,
         style: {
@@ -15,18 +15,6 @@ window.onload = function () {
     }).showToast();}
 
     // Special Offer button toast (top-left)
-    document.getElementById("special-offer-btn").addEventListener("click", function () {
-        Toastify({
-            text: "Special Offer: Buy 1 Get 1 Free on all Kebabs today!",
-            duration: 5000,
-            close: true,
-            stopOnFocus: true,
-            className: "top-left-toast",
-            style: { 
-                background: "linear-gradient(to right, #ff5f6d, #ffc371)"
-            }
-        }).showToast();
-    });
 
     document.getElementById("special-offer-btn").addEventListener("click", function () {
     const offers = [
