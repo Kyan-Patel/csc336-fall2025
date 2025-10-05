@@ -1,18 +1,27 @@
 
 let currentID;
+let SWAPI_character;
 
-async function getSWAPI_character(name){
-    let SWAPI_response = await fetch(`https://swapi.dev/api/people/?search=${document.getElementById('sw-name').value.trim()}`);
-    let SWAPI_character = await SWAPI_response.json();
-    currentID = SWAPI_response.results[0].url.split('/')[5];
-    console.log(SWAPI_character);
+async function getSWAPI_character() {
+    const name = document.getElementById('sw-name').value;
+    const response = await fetch(`https://swapi.dev/api/people/?search=${name}`);
+    const data = await response.json();
+
+    SWAPI_character = data;
+    currentID = data.results[0].url.split('/')[5];
 }
 
-async function getSWAPI_id(id){
-    let SWAPI_response = await fetch(`https://swapi.dev/api/people/${id}/`);
-    let SWAPI_character = await SWAPI_response.json();
-    console.log(SWAPI_character);
+function displayCharacter() {
+  const resultDiv = document.getElementById('sw-character');
+
+    resultDiv.textContent = "";
+
+    const nameP = document.createElement("p");
+    nameP.textContent = `Name: ${SWAPI_character.results[0].name}`;
+    resultDiv.appendChild(nameP);
+
+    const idP = document.createElement("p");
+    idP.textContent = `ID: ${currentID}`;
+    resultDiv.appendChild(idP);
 }
-
-
 // https://akabab.github.io/starwars-api/api/all.json 

@@ -6,15 +6,11 @@
 
 <body>
     <h1>Star Wars Character Lookup</h1>
+    <input type="text" id="sw-name" placeholder="Enter character name">
+   <button onclick="getSWAPI_character().then(displayCharacter)">Search</button>
 
-    <form id="sw-form" onsubmit="event.preventDefault(); getSWAPI_character();">
-        <label>
-            Character Name:
-            <input type="text" id="sw-name">
-        </label>
-        <button type="submit">Search</button>
-    </form>
 
     <div id="sw-character"></div>
+
 </body>
 </html>
