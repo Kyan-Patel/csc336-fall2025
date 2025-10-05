@@ -1,23 +1,20 @@
 <html>
-
 <head>
     <title>Star Wars Look-up</title>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <form id="Star Wars Character">
+    <h1>Star Wars Character Lookup</h1>
+
+    <form id="sw-form" onsubmit="event.preventDefault(); getSWAPI_character();">
         <label>
             Character Name:
             <input type="text" id="sw-name">
         </label>
+        <button type="submit">Search</button>
     </form>
 
-
-    <h1>Fetch APIs</h1>
-    <button onclick="getStarWarsCharacter(1)">Get Star Wars Character</button>
+    <div id="sw-character"></div>
 </body>
-
-<div id="sw-character"></div>
-
 </html>

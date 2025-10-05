@@ -1,7 +1,10 @@
 
+let currentID;
+
 async function getSWAPI_character(name){
-    let SWAPI_response = await fetch(`https://swapi.dev/api/people/?search=${name}`);
+    let SWAPI_response = await fetch(`https://swapi.dev/api/people/?search=${document.getElementById('sw-name').value.trim()}`);
     let SWAPI_character = await SWAPI_response.json();
+    currentID = SWAPI_response.results[0].url.split('/')[5];
     console.log(SWAPI_character);
 }
 
@@ -11,5 +14,5 @@ async function getSWAPI_id(id){
     console.log(SWAPI_character);
 }
 
-const currentCharacterId = 
+
 // https://akabab.github.io/starwars-api/api/all.json 
