@@ -1,16 +1,19 @@
 <html>
+
 <head>
     <title>Star Wars Look-up</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>Star Wars Character Lookup</h1>
-    <input type="text" id="sw-name" placeholder="Enter character name">
-   <button onclick="getSWAPI_character().then(displayCharacter)">Search</button>
+    <h1>Star Wars Movie Character Lookup</h1>
+    <input type="text" id="sw-name">
+    <button onclick="getSWAPI_character().then(displayCharacter)">Search</button>
 
 
     <div id="sw-character"></div>
 
 </body>
+
 </html>
