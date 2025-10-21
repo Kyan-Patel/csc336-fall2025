@@ -1,0 +1,225 @@
+{
+  "regions": [
+    {
+      "name": "Northwest",
+      "climate": "Snowy",
+      "towns": [
+        {
+          "name": "Forsthall",
+          "population": 300,
+          "notable_people": [
+            {
+              "name": "Captain Frostwalker IV",
+              "role": "Captain of the Guard",
+              "items": [
+                {
+                  "name": "Sword of Frost",
+                  "rarity": "Generational"
+                }
+              ]
+            },
+            {
+              "name": "Wizard of Clarity",
+              "role": "Local Wizard",
+              "items": [
+                {
+                  "name": "Ice Staff of the Furture",
+                  "rarity": "Rare"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Portsmouth",
+          "population": 1500,
+          "notable_people": [
+            {
+              "name": "Mayor Trinton",
+              "role": "Mayor",
+              "items": [
+                {
+                  "name": "Seal of the City",
+                  "rarity": "Uncommon"
+                }
+              ]
+            },
+            {
+              "name": "Sezer Nastam",
+              "role": "Harbor Master",
+              "items": [
+                {
+                  "name": "Telescope of Masters",
+                  "rarity": "Common"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hollows of Winter",
+          "population": 0,
+          "notable_people": [
+            {
+              "name": "Ghost of Fallen King",
+              "role": "Figure of Myth",
+              "items": [
+                {
+                  "name": "Ice Spirit Bow",
+                  "rarity": "Unknown"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Southwest",
+      "climate": "Temperate",
+      "towns": [
+        {
+          "name": "Goldenfield",
+          "population": 500,
+          "notable_people": [
+            {
+              "name": "Farmer Shawn",
+              "role": "Farmer",
+              "items": [
+                {
+                  "name": "Plow",
+                  "rarity": "Common"
+                }
+              ]
+            },
+            {
+              "name": "Kenneth the Miner",
+              "role": "Miner",
+              "items": [
+                {
+                  "name": "Prospecting Kit",
+                  "rarity": "Uncommon"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kingdom of Britiania",
+          "population": 4500,
+          "notable_people": [
+            {
+              "name": "King Midas",
+              "role": "King",
+              "items": [
+                {
+                  "name": "Crown of Gold",
+                  "rarity": "Legendary"
+                }
+              ]
+            },
+            {
+              "name": "Kengard the Disgraced",
+              "role": "Assassin",
+              "items": [
+                {
+                  "name": "Posion Dagger",
+                  "rarity": "Rare"
+                }
+              ]
+            },
+            {
+              "name": "Charles Sr.",
+              "role": "Bookkeeper",
+              "items": []
+            }
+          ]
+        },
+        {
+          "name": "The Great Farmlands",
+          "population": 600,
+          "notable_people": [
+            {
+              "name": "Farmer Jill",
+              "role": "Farmer",
+              "items": [
+                {
+                  "name": "Scythe of Harvest",
+                  "rarity": "Uncommon"
+                }
+              ]
+            },
+            {
+              "name": "Lord Varrin Greythorne",
+              "role": "Nobleman",
+              "items": [
+                {
+                  "name": "Silver Serpent Signet",
+                  "rarity": "Rare"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sandsea Region",
+      "climate": "Humid",
+      "towns": [
+        {
+          "name": "Azure Shoals",
+          "population": 250,
+          "notable_people": [
+            {
+              "name": "Bartender Cleo",
+              "role": "Bartender",
+              "items": [
+                {
+                  "name": "Book of Rumors",
+                  "rarity": "Uncommon"
+                }
+              ]
+            },
+            {
+              "name": "Korin the Saltless",
+              "role": "Pirate",
+              "items": [
+                {
+                  "name": "Rustless Rapier",
+                  "rarity": "Legendary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "The Grand Bazaar",
+          "population": 1200,
+          "notable_people": [
+            {
+              "name": "Sir Fallon",
+              "role": "Lord",
+              "items": [
+                {
+                  "name": "Monocle of Golden Vision",
+                  "rarity": "Uncommon"
+                }
+              ]
+            },
+            {
+              "name": "Merchant Lila",
+              "role": "Trader",
+              "items": [
+                {
+                  "name": "Bag of Endless Goods",
+                  "rarity": "Rare"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
