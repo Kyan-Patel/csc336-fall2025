@@ -10,7 +10,7 @@ function App() {
 
       <nav className="navbar">
         <Link className="nav-link" to="/">Home</Link>
-        <Link className="nav-link" to="/dogs">Dogs</Link>
+        <Link className="nav-link" to="/dogs">About</Link>
         <Link className="nav-link" to="/cats">Cats</Link>
       </nav>
 
