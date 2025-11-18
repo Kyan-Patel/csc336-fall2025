@@ -12,13 +12,13 @@ body {
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  text-align: center; /* center text inside */
+  text-align: center;
 }
 
 .form-row {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center form elements */
+  align-items: center; 
   gap: 10px;
   margin-bottom: 16px;
 }
@@ -54,7 +54,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* center list items */
+  align-items: center; 
 }
 
 .list-item {
@@ -71,4 +71,23 @@ body {
   border-color: #f59e0b;
   background: #fff7df;
   font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* spacing between links */
+  padding: 12px;
+  background-color: #111827; /* dark background */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
