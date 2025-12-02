@@ -23,6 +23,7 @@ function RecipesList() {
 
       <div className="filters">
         <input
+          className="filter-input"
           type="text"
           placeholder="Search recipes..."
           value={search}
@@ -30,6 +31,7 @@ function RecipesList() {
         />
 
         <select
+          className="filter-select"
           value={difficultyFilter}
           onChange={(e) => setDifficultyFilter(e.target.value)}
         >
