@@ -9,7 +9,7 @@ function Recipes() {
   useEffect(() => {
     async function loadRecipes() {
       try {
-        const res = await fetch("http://localhost:3000/api/recipes");
+        const res = await fetch("/api/recipes");
 
         if (!res.ok) {
           setError("Could not load recipes.");
