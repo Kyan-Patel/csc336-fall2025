@@ -1,19 +1,16 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Home from "./pages/Home.jsx";
 import Recipes from "./pages/Recipes.jsx";
 import AddRecipe from "./pages/AddRecipe.jsx";
-import "./App.css"; // optional, keep if you already had it
-import "./index.css"; // make sure global styles are loaded
-// ^ if index.css is already imported in main.jsx, you can skip this line
 
 function App() {
   return (
     <Router>
-      {/* Navbar */}
       <nav className="navbar">
         <div className="navbar-title">RecipeBox</div>
-
         <div className="navbar-links">
           <Link className="nav-btn" to="/">Home</Link>
           <Link className="nav-btn" to="/recipes">Recipes</Link>
@@ -21,7 +18,15 @@ function App() {
         </div>
       </nav>
 
-      {/* Page content */}
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover={false}
+      />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recipes" element={<Recipes />} />
