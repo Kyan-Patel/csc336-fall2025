@@ -4,7 +4,7 @@ By Kyan Patel
 ---
 
 ## Deployed App (Render)
-**URL:** (link)[https://csc336-fall2025-e2ay.onrender.com]
+Here is the [link](https://csc336-fall2025-e2ay.onrender.com) to the webapp hosted through render.
 
 ---
 
