@@ -1,11 +1,6 @@
 import express from "express";
 import cors from "cors";
 import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -24,6 +19,7 @@ function writeRecipes(recipes) {
   fs.writeFileSync(DATA_FILE, JSON.stringify(recipes, null, 2));
 }
 
+// API routes
 app.get("/api/recipes", (req, res) => {
   const recipes = readRecipes();
   res.json(recipes);
@@ -52,12 +48,8 @@ app.post("/api/recipes", (req, res) => {
   res.status(201).json(newRecipe);
 });
 
-const clientPath = path.join(__dirname, "../client/dist");
-app.use(express.static(clientPath));
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(clientPath, "index.html"));
-});
+app.use(express.static("../client/dist"));
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
