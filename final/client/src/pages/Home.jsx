@@ -2,27 +2,20 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <section className="home">
-      <div className="home-hero">
-        <h1>Welcome to RecipeBox</h1>
-        <p className="home-tagline">
-          Your personal cookbook — save, browse, and add your favorite recipes.
+    <div className="home-container">
+      {/* HERO BANNER */}
+      <section className="hero-banner">
+        <h1 className="hero-title">Cook. Create. Enjoy.</h1>
+        <p className="hero-subtitle">
+          Save your favorite meals and discover new ones.
         </p>
 
-        <div className="home-actions">
-          <Link className="btn primary" to="/recipes">
-            View Recipes
-          </Link>
-          <Link className="btn outline" to="/add">
-            Add Recipe
-          </Link>
+        <div className="hero-buttons">
+          <Link className="hero-btn" to="/recipes">View Recipes</Link>
+          <Link className="hero-btn hero-btn-alt" to="/add">Add Recipe</Link>
         </div>
-
-        <p className="home-subtext">
-          A simple recipe app for my web programming course.
-        </p>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 

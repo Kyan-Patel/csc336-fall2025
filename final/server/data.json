@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "One-Pot Pesto Pasta",
+    "cookTime": 20,
+    "difficulty": "Easy",
+    "instructions": "Boil pasta until al dente.\nReserve 1/4 cup pasta water.\nStir pesto into the hot pasta.\nAdd pasta water to adjust consistency.\nServe warm with parmesan."
+  },
+  {
+    "id": 2,
+    "title": "Garlic Butter Chicken",
+    "cookTime": 25,
+    "difficulty": "Medium",
+    "instructions": "Season chicken with salt and pepper.\nSear in a skillet until golden.\nAdd garlic and butter, reduce heat.\nSimmer until chicken reaches 165°F.\nServe with rice or vegetables."
+  },
+  {
+    "id": 3,
+    "title": "Stir-Fry Vegetables",
+    "cookTime": 15,
+    "difficulty": "Easy",
+    "instructions": "Heat oil in a pan.\nAdd broccoli, carrots, peppers, and onions.\nCook on high heat for 5–7 minutes.\nStir in soy sauce and sesame oil.\nServe immediately over rice."
+  },
+  {
+    "id": 4,
+    "title": "Classic French Toast",
+    "cookTime": 10,
+    "difficulty": "Easy",
+    "instructions": "Whisk eggs, milk, cinnamon, and vanilla.\nDip bread slices into the mixture.\nCook on medium heat until golden on both sides.\nServe with syrup and powdered sugar."
+  },
+  {
+    "id": 5,
+    "title": "Beef Tacos",
+    "cookTime": 30,
+    "difficulty": "Medium",
+    "instructions": "Brown ground beef in a skillet.\nAdd taco seasoning and water.\nSimmer until thickened.\nWarm tortillas.\nAssemble with lettuce, cheese, salsa, and beef."
+  }
+]
